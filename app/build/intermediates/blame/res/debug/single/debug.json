@@ -48,19 +48,19 @@
         "source": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
-        "merged": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/build/intermediates/res/merged/debug/drawable-nodpi_join_us.png.flat",
-        "source": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/res/drawable-nodpi/join_us.png"
-    },
-    {
-        "merged": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/res/drawable/ic_launcher_background.xml"
-    },
-    {
         "merged": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
         "merged": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher.png.flat",
         "source": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/build/intermediates/res/merged/debug/drawable-nodpi_join_us.png.flat",
+        "source": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/res/drawable-nodpi/join_us.png"
+    },
+    {
+        "merged": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/build/intermediates/res/merged/debug/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/res/drawable/ic_launcher_background.xml"
     }
 ]
