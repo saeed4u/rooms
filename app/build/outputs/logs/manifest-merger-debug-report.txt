@@ -1,0 +1,274 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/95e7c4fedaf78d04a2d8f377e0a7c504/navigation-ui-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/5a4f1db2cd13add90ba5d3152ba3c905/navigation-ui-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ccc9470c5f5deba98baa1e23bb15eae3/material-1.2.0-alpha02/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.dagger:dagger-android-support:2.23.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/d1e39af6dd8c4cd0e9a3c6010cc7ca9e/jetified-dagger-android-support-2.23.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dcdb5c265e6dc646342ee0fb970781e1/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bf11fc22c88d59b40e9eeee50dee2a50/jetified-core-ktx-1.1.0/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/4d5fa43ee459a7b97628a934840eb07f/navigation-fragment-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f47f51db94c601b25b2e08717af1a938/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/382402500cdacafb1d16da929065f2ed/lifecycle-extensions-2.2.0-rc02/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/eeb51ff5baf6f7f9cdf84b6986963be2/jetified-lifecycle-livedata-ktx-2.2.0-alpha01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/26bd3899bb53ce157628178b1b23cebe/jetified-viewpager2-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/fd3c73bd892202361f1f4178b774d314/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-ktx:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f8c21f5bbe26857801c3957fea91cc31/jetified-room-ktx-2.2.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-rxjava2:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/7ec9514ed1e0803444fcc302da73b0af/room-rxjava2-2.2.2/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:17:1-30:12
+MERGED from [com.google.dagger:dagger-android:2.23.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/381498cbbb042f2e8550781b2b41bbe3/jetified-dagger-android-2.23.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a380eec647efcf5eee29ba08864ff32d/jetified-timber-4.7.1/AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9f11172b5900fe6dd8b09e00993029e9/navigation-runtime-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a2739a9773b5430dc6e8df6449698ba6/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/8701a36f6ded7049498fe22c98a1c9ab/jetified-activity-ktx-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/855967052a3271a3b3d6d08b3c4efac6/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0-alpha01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ab34a89089e8784732a2d4d69be557cb/jetified-lifecycle-livedata-core-ktx-2.2.0-alpha01/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/5868bba282db1bb47c9b7620862dde4e/navigation-common-ktx-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/3572326dfc06ae4d99e5f14a81d56e62/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/8f81e835adb41636fad78f47254fa21b/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a54a09004cec71b31a58455accfd8965/coordinatorlayout-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/627e04b9f878f10e52290727262d1d56/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ba7c8dd84dbefc896e46326ab7de5939/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/192c8dcaf837902c75c0a3f0fa78cda4/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bd0005a844df8faf8ba9568d58cdce90/navigation-fragment-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.2.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/866d5414186247ebcc40fdc1ac93d910/fragment-1.2.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/2d6a7d31afabe44cd57f9222015922df/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/884d7232923bef71604455aafde0e6aa/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bab77390c05c03dffcd6031c3bb53f84/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/03caeedcd5ca3876dcbbe4e6a5bf47e4/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/cdf1b3e295f64cf72851de2aa8997828/navigation-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ea639532551984ee4eda0b5bd3277802/jetified-activity-1.1.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.navigation:navigation-common:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/e683df1c593bb4f40ea000e1d5368249/navigation-common-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/60ddf4def150ee36ad0a1e9ed8688d71/core-1.1.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/aca3226062a2c5b7e826fa456076d156/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/cb15e440dee172472f3073dbab51085e/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:17:1-32:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/c6afbb45dfdb2d962bd346a582ff70b5/jetified-lifecycle-service-2.2.0-rc02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/7f8f2a6d23d20b3fa31059e7e3b8c325/lifecycle-runtime-2.2.0-rc02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f869bcfa908a5bbd898892bd65c0d3a2/lifecycle-livedata-2.2.0-rc02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9dbb1a41431403e4db5074bf342511fe/jetified-lifecycle-viewmodel-savedstate-1.0.0-rc01/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/c6f29660b4b811f1362980925839f8a3/lifecycle-livedata-core-2.2.0-rc02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9900370e8a152405525a4d6623343e32/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/268e6556c25f43e666e00af6ae0f8ff0/jetified-savedstate-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/fd9592384e3012f8031c40050b750be7/lifecycle-viewmodel-2.2.0-rc02/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ca4d39591b2e8ec12371b4dd59fe818a/sqlite-framework-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/391ab37f9d353a4616d1fa0063b8a49d/sqlite-2.0.1/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dc9b1a4d4111947e9a23997bfc85ed93/versionedparcelable-1.1.0/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f5fc8cb7fdd1538614ee3a0dbfa95d32/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/b289056bd9623098c35bd0efad1fa3ca/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/52c543a14137755cbd9bd8dce1bbfb27/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/da61f3b3ddcacc60c32f603ccc729fca/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+	package
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:3:5-31
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:2:5-51
+	android:versionCode
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:1-21:12
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:1:11-69
+application
+ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:5:5-20:19
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ccc9470c5f5deba98baa1e23bb15eae3/material-1.2.0-alpha02/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ccc9470c5f5deba98baa1e23bb15eae3/material-1.2.0-alpha02/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f47f51db94c601b25b2e08717af1a938/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f47f51db94c601b25b2e08717af1a938/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/382402500cdacafb1d16da929065f2ed/lifecycle-extensions-2.2.0-rc02/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/382402500cdacafb1d16da929065f2ed/lifecycle-extensions-2.2.0-rc02/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:24:5-28:19
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a380eec647efcf5eee29ba08864ff32d/jetified-timber-4.7.1/AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a380eec647efcf5eee29ba08864ff32d/jetified-timber-4.7.1/AndroidManifest.xml:7:5-20
+MERGED from [androidx.core:core:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/60ddf4def150ee36ad0a1e9ed8688d71/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/60ddf4def150ee36ad0a1e9ed8688d71/core-1.1.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:24:5-30:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dc9b1a4d4111947e9a23997bfc85ed93/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dc9b1a4d4111947e9a23997bfc85ed93/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/60ddf4def150ee36ad0a1e9ed8688d71/core-1.1.0/AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.ut.iot.rooms.ui.AuthActivity
+ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:12:9-19:20
+	android:name
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:12:19-50
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:13:13-18:29
+action#android.intent.action.MAIN
+ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:14:17-69
+	android:name
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:15:17-17:63
+	tools:ignore
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:17:21-60
+	android:name
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml:16:21-68
+uses-sdk
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/95e7c4fedaf78d04a2d8f377e0a7c504/navigation-ui-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/95e7c4fedaf78d04a2d8f377e0a7c504/navigation-ui-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/5a4f1db2cd13add90ba5d3152ba3c905/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-ui:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/5a4f1db2cd13add90ba5d3152ba3c905/navigation-ui-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ccc9470c5f5deba98baa1e23bb15eae3/material-1.2.0-alpha02/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.0-alpha02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ccc9470c5f5deba98baa1e23bb15eae3/material-1.2.0-alpha02/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.23.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/d1e39af6dd8c4cd0e9a3c6010cc7ca9e/jetified-dagger-android-support-2.23.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android-support:2.23.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/d1e39af6dd8c4cd0e9a3c6010cc7ca9e/jetified-dagger-android-support-2.23.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dcdb5c265e6dc646342ee0fb970781e1/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dcdb5c265e6dc646342ee0fb970781e1/appcompat-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bf11fc22c88d59b40e9eeee50dee2a50/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bf11fc22c88d59b40e9eeee50dee2a50/jetified-core-ktx-1.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/4d5fa43ee459a7b97628a934840eb07f/navigation-fragment-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/4d5fa43ee459a7b97628a934840eb07f/navigation-fragment-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f47f51db94c601b25b2e08717af1a938/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f47f51db94c601b25b2e08717af1a938/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/382402500cdacafb1d16da929065f2ed/lifecycle-extensions-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/382402500cdacafb1d16da929065f2ed/lifecycle-extensions-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/eeb51ff5baf6f7f9cdf84b6986963be2/jetified-lifecycle-livedata-ktx-2.2.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-alpha01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/eeb51ff5baf6f7f9cdf84b6986963be2/jetified-lifecycle-livedata-ktx-2.2.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/26bd3899bb53ce157628178b1b23cebe/jetified-viewpager2-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/26bd3899bb53ce157628178b1b23cebe/jetified-viewpager2-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/fd3c73bd892202361f1f4178b774d314/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/fd3c73bd892202361f1f4178b774d314/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f8c21f5bbe26857801c3957fea91cc31/jetified-room-ktx-2.2.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f8c21f5bbe26857801c3957fea91cc31/jetified-room-ktx-2.2.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-rxjava2:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/7ec9514ed1e0803444fcc302da73b0af/room-rxjava2-2.2.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-rxjava2:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/7ec9514ed1e0803444fcc302da73b0af/room-rxjava2-2.2.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.dagger:dagger-android:2.23.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/381498cbbb042f2e8550781b2b41bbe3/jetified-dagger-android-2.23.1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.dagger:dagger-android:2.23.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/381498cbbb042f2e8550781b2b41bbe3/jetified-dagger-android-2.23.1/AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a380eec647efcf5eee29ba08864ff32d/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton.timber:timber:4.7.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a380eec647efcf5eee29ba08864ff32d/jetified-timber-4.7.1/AndroidManifest.xml:5:5-43
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9f11172b5900fe6dd8b09e00993029e9/navigation-runtime-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9f11172b5900fe6dd8b09e00993029e9/navigation-runtime-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a2739a9773b5430dc6e8df6449698ba6/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a2739a9773b5430dc6e8df6449698ba6/jetified-fragment-ktx-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/8701a36f6ded7049498fe22c98a1c9ab/jetified-activity-ktx-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/8701a36f6ded7049498fe22c98a1c9ab/jetified-activity-ktx-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/855967052a3271a3b3d6d08b3c4efac6/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/855967052a3271a3b3d6d08b3c4efac6/jetified-lifecycle-viewmodel-ktx-2.1.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0-alpha01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ab34a89089e8784732a2d4d69be557cb/jetified-lifecycle-livedata-core-ktx-2.2.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0-alpha01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ab34a89089e8784732a2d4d69be557cb/jetified-lifecycle-livedata-core-ktx-2.2.0-alpha01/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/5868bba282db1bb47c9b7620862dde4e/navigation-common-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/5868bba282db1bb47c9b7620862dde4e/navigation-common-ktx-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/3572326dfc06ae4d99e5f14a81d56e62/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/3572326dfc06ae4d99e5f14a81d56e62/jetified-appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/8f81e835adb41636fad78f47254fa21b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/8f81e835adb41636fad78f47254fa21b/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a54a09004cec71b31a58455accfd8965/coordinatorlayout-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/a54a09004cec71b31a58455accfd8965/coordinatorlayout-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/627e04b9f878f10e52290727262d1d56/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/627e04b9f878f10e52290727262d1d56/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ba7c8dd84dbefc896e46326ab7de5939/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ba7c8dd84dbefc896e46326ab7de5939/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/192c8dcaf837902c75c0a3f0fa78cda4/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/192c8dcaf837902c75c0a3f0fa78cda4/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bd0005a844df8faf8ba9568d58cdce90/navigation-fragment-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-fragment:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bd0005a844df8faf8ba9568d58cdce90/navigation-fragment-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/866d5414186247ebcc40fdc1ac93d910/fragment-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/866d5414186247ebcc40fdc1ac93d910/fragment-1.2.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/2d6a7d31afabe44cd57f9222015922df/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/2d6a7d31afabe44cd57f9222015922df/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/884d7232923bef71604455aafde0e6aa/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/884d7232923bef71604455aafde0e6aa/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bab77390c05c03dffcd6031c3bb53f84/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/bab77390c05c03dffcd6031c3bb53f84/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/03caeedcd5ca3876dcbbe4e6a5bf47e4/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/03caeedcd5ca3876dcbbe4e6a5bf47e4/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/cdf1b3e295f64cf72851de2aa8997828/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-runtime:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/cdf1b3e295f64cf72851de2aa8997828/navigation-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ea639532551984ee4eda0b5bd3277802/jetified-activity-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ea639532551984ee4eda0b5bd3277802/jetified-activity-1.1.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/e683df1c593bb4f40ea000e1d5368249/navigation-common-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/e683df1c593bb4f40ea000e1d5368249/navigation-common-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/60ddf4def150ee36ad0a1e9ed8688d71/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/60ddf4def150ee36ad0a1e9ed8688d71/core-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/aca3226062a2c5b7e826fa456076d156/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/aca3226062a2c5b7e826fa456076d156/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/cb15e440dee172472f3073dbab51085e/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/cb15e440dee172472f3073dbab51085e/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/c6afbb45dfdb2d962bd346a582ff70b5/jetified-lifecycle-service-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/c6afbb45dfdb2d962bd346a582ff70b5/jetified-lifecycle-service-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/7f8f2a6d23d20b3fa31059e7e3b8c325/lifecycle-runtime-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/7f8f2a6d23d20b3fa31059e7e3b8c325/lifecycle-runtime-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f869bcfa908a5bbd898892bd65c0d3a2/lifecycle-livedata-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f869bcfa908a5bbd898892bd65c0d3a2/lifecycle-livedata-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9dbb1a41431403e4db5074bf342511fe/jetified-lifecycle-viewmodel-savedstate-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc01] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9dbb1a41431403e4db5074bf342511fe/jetified-lifecycle-viewmodel-savedstate-1.0.0-rc01/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/c6f29660b4b811f1362980925839f8a3/lifecycle-livedata-core-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/c6f29660b4b811f1362980925839f8a3/lifecycle-livedata-core-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9900370e8a152405525a4d6623343e32/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/9900370e8a152405525a4d6623343e32/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/268e6556c25f43e666e00af6ae0f8ff0/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/268e6556c25f43e666e00af6ae0f8ff0/jetified-savedstate-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/fd9592384e3012f8031c40050b750be7/lifecycle-viewmodel-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/fd9592384e3012f8031c40050b750be7/lifecycle-viewmodel-2.2.0-rc02/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ca4d39591b2e8ec12371b4dd59fe818a/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/ca4d39591b2e8ec12371b4dd59fe818a/sqlite-framework-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/391ab37f9d353a4616d1fa0063b8a49d/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/391ab37f9d353a4616d1fa0063b8a49d/sqlite-2.0.1/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dc9b1a4d4111947e9a23997bfc85ed93/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/dc9b1a4d4111947e9a23997bfc85ed93/versionedparcelable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f5fc8cb7fdd1538614ee3a0dbfa95d32/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f5fc8cb7fdd1538614ee3a0dbfa95d32/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/b289056bd9623098c35bd0efad1fa3ca/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/b289056bd9623098c35bd0efad1fa3ca/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/52c543a14137755cbd9bd8dce1bbfb27/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/52c543a14137755cbd9bd8dce1bbfb27/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/da61f3b3ddcacc60c32f603ccc729fca/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/da61f3b3ddcacc60c32f603ccc729fca/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+		ADDED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/brasaeed/CodeBlocks/course-work/iot/Rooms/app/src/main/AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.2.2] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/636195410c6eedce0500bd68caf15bcd/room-runtime-2.2.2/AndroidManifest.xml:26:13-74
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:25:9-29:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:27:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:29:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.2.0-rc02] /Users/brasaeed/.gradle/caches/transforms-2/files-2.1/f6fc1d425d8f64e9667d34c298616993/jetified-lifecycle-process-2.2.0-rc02/AndroidManifest.xml:26:13-79
