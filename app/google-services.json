@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "180554585508",
+    "firebase_url": "https://rooms-4add5.firebaseio.com",
+    "project_id": "rooms-4add5",
+    "storage_bucket": "rooms-4add5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180554585508:android:35be62905338b41e065d31",
+        "android_client_info": {
+          "package_name": "com.ut.iot.rooms"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180554585508-1jrj8tucgu77se35sl45olclp1g1rmmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJxyJDl4we0fNbOOA81-k0_Bj6cWK4460"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180554585508-1jrj8tucgu77se35sl45olclp1g1rmmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
