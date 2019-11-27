@@ -1,7 +1,7 @@
 package com.ut.iot.rooms.api
 
-import com.ut.iot.rooms.AUTHORIZATION_HEADER
-import com.ut.iot.rooms.DEVICE_ID_HEADER
+import com.ut.iot.rooms.util.AUTHORIZATION_HEADER
+import com.ut.iot.rooms.util.DEVICE_ID_HEADER
 import com.ut.iot.rooms.state.StateManager
 import okhttp3.Interceptor
 import okhttp3.Response

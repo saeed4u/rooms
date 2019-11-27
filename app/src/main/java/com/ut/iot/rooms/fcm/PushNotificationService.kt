@@ -5,7 +5,7 @@ import android.content.Intent
 import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.firebase.messaging.FirebaseMessagingService
 import com.google.firebase.messaging.RemoteMessage
-import com.ut.iot.rooms.PUSH_NOTIFICATION
+import com.ut.iot.rooms.util.PUSH_NOTIFICATION
 import com.ut.iot.rooms.api.model.device.UpdateFCMToken
 import com.ut.iot.rooms.data.EventBus
 import com.ut.iot.rooms.state.StateManager

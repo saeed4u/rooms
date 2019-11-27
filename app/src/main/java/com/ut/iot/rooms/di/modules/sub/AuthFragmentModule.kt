@@ -10,13 +10,13 @@ import dagger.android.ContributesAndroidInjector
  * Created by Saeed on 27/11/2019.
  */
 @Module
-interface AuthFragmentModule {
+abstract class AuthFragmentModule {
 
     @ContributesAndroidInjector
-    fun providesSignInFragment(): SignInFragment
+    abstract fun providesSignInFragment(): SignInFragment
 
 
     @ContributesAndroidInjector
-    fun providesSignUpFragment(): SignUpFragment
+    abstract fun providesSignUpFragment(): SignUpFragment
 
 }
