@@ -9,7 +9,6 @@
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
         <item name="colorError">@color/colorError</item>
-        <item name="android:textColor">@color/textColorPrimary</item>
     </style>
 
 </resources>
