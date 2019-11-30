@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import com.ut.iot.rooms.api.model.auth.AuthRequest
 import com.ut.iot.rooms.data.model.Resource
-import com.ut.iot.rooms.data.model.User
+import com.ut.iot.rooms.data.model.UserInfo
 import com.ut.iot.rooms.repo.auth.AuthRepo
 import com.ut.iot.rooms.util.NullLiveData
 import javax.inject.Inject
@@ -22,7 +22,7 @@ open class AuthViewModel @Inject constructor(private val authRepo: AuthRepo) : V
     val authFormState: LiveData<AuthFormState> = _authForm
 
     private val authRequest: MutableLiveData<AuthRequest> = MutableLiveData()
-    val authResult: LiveData<Resource<User>>
+    val authResult: LiveData<Resource<UserInfo>>
 
     init {
         authResult = authRequest.switchMap {

@@ -5,7 +5,11 @@
     <color name="colorPrimaryDark">#FF9800</color>
     <color name="colorSecondary">#29B6F6</color>
     <color name="colorSecondaryVariant">#4FC3F7</color>
+    <color name="colorSurface">@color/white</color>
     <color name="colorError">#EF5350</color>
     <color name="textColorPrimary">#212121</color>
     <color name="white">#FFF</color>
+    <color name="black">#000000</color>
+    <color name="darkBackground">#121212</color>
+    <color name="lightTextColor">#DEFFFFFF</color>
 </resources>

@@ -1,8 +1,8 @@
 package com.ut.iot.rooms.api
 
+import com.ut.iot.rooms.state.StateManager
 import com.ut.iot.rooms.util.AUTHORIZATION_HEADER
 import com.ut.iot.rooms.util.DEVICE_ID_HEADER
-import com.ut.iot.rooms.state.StateManager
 import okhttp3.Interceptor
 import okhttp3.Response
 import timber.log.Timber
@@ -28,6 +28,7 @@ class RequestInterceptorForHeaders(private val stateManager: StateManager) : Int
                     .newBuilder()
                     .add(DEVICE_ID_HEADER, stateManager.getDeviceId().toString())
                     .add(AUTHORIZATION_HEADER, "Bearer ${stateManager.getAuthToken()}")
+                    .add("Accept", "application/json")
                     .build()
             )
         return chain.proceed(requestBuilder.build())

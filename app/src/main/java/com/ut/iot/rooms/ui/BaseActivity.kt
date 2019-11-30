@@ -148,4 +148,9 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
             })
     }
 
+    fun showError(message: String) {
+        //showBanner("error", content = message) { banner?.dismiss() }
+    }
+
+
 }
