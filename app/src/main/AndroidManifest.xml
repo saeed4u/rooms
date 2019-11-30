@@ -1,25 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ut.iot.rooms">
 
     <application
+        android:name=".Rooms"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:name=".Rooms"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="n">
+
         <activity android:name=".ui.auth.AuthActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category
                     android:name="android.intent.category.LAUNCHER"
                     tools:ignore="GoogleAppIndexingWarning" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".ui.home.HomeActivity"
+            android:label="@string/title_activity_home" />
 
         <service android:name=".fcm.PushNotificationService">
             <intent-filter>
@@ -27,4 +34,5 @@
             </intent-filter>
         </service>
     </application>
+
 </manifest>

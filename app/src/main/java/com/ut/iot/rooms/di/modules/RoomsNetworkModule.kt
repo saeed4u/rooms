@@ -1,11 +1,12 @@
 package com.ut.iot.rooms.di.modules
 
-import com.ut.iot.rooms.util.API_BASE_URL
 import com.ut.iot.rooms.api.RequestInterceptorForHeaders
 import com.ut.iot.rooms.api.adapter.LiveDataCallAdapterFactory
 import com.ut.iot.rooms.api.service.AuthService
+import com.ut.iot.rooms.api.service.BookingService
 import com.ut.iot.rooms.api.service.DeviceService
 import com.ut.iot.rooms.state.StateManager
+import com.ut.iot.rooms.util.API_BASE_URL
 import dagger.Module
 import dagger.Provides
 import okhttp3.OkHttpClient
@@ -55,6 +56,13 @@ class RoomsNetworkModule {
     @Singleton
     internal fun providesAuthService(retrofit: Retrofit): AuthService {
         return retrofit.create(AuthService::class.java)
+    }
+
+
+    @Provides
+    @Singleton
+    internal fun providesBookingService(retrofit: Retrofit): BookingService {
+        return retrofit.create(BookingService::class.java)
     }
 
 }
