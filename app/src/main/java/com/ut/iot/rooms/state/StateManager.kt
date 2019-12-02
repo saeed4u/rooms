@@ -40,7 +40,7 @@ class StateManager(context: Context) {
 
     fun getDeviceId(): Int = sharedPreferences.getInt(DEVICE_ID, 0)
 
-    fun saveFCMtoken(fcmToken: String?) {
+    fun saveFCMToken(fcmToken: String?) {
         val editor = sharedPreferences.edit()
         editor.putString(FCM_TOKEN, fcmToken)
         editor.apply()

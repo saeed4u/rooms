@@ -26,7 +26,7 @@ class PushNotificationService : FirebaseMessagingService() {
     override fun onNewToken(token: String) {
         super.onNewToken(token)
         val stateManager = StateManager(applicationContext)
-        stateManager.saveFCMtoken(token)
+        stateManager.saveFCMToken(token)
         EventBus.publish(UpdateFCMToken(token))
     }
 

@@ -14,6 +14,7 @@ import com.ut.iot.rooms.data.BannerType
 import com.ut.iot.rooms.data.EventBus
 import com.ut.iot.rooms.data.model.ResourceLoading
 import com.ut.iot.rooms.repo.device.DeviceRepo
+import com.ut.iot.rooms.state.StateManager
 import com.ut.iot.rooms.ui.auth.AuthActivity
 import dagger.android.support.DaggerAppCompatActivity
 import io.reactivex.android.schedulers.AndroidSchedulers
@@ -37,6 +38,9 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
     protected fun hideLoader() {
         loader?.visibility = View.GONE
     }
+
+    @Inject
+    lateinit var stateManager: StateManager
 
     abstract fun handleResourceLoading(resourceLoading: ResourceLoading?)
 
@@ -101,6 +105,9 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
 
 
     protected fun toAuthActivity() {
+        stateManager.saveAuthToken("")
+        stateManager.saveUserId(0)
+        stateManager.setLoggedInState(false)
         val intent = Intent(this, AuthActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)

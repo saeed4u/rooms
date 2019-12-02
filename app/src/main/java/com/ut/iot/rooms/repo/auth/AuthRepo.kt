@@ -28,6 +28,7 @@ class AuthRepo @Inject constructor(
     private val roomDao: RoomDao,
     private val roomTypeDao: RoomTypeDao,
     private val imageDao: ImageDao,
+    private val hotelDao: HotelDao,
     private val authService: AuthService,
     private val stateManager: StateManager
 ) {
@@ -109,6 +110,7 @@ class AuthRepo @Inject constructor(
                     roomDao.deleteAll()
                     roomTypeDao.deleteAll()
                     imageDao.deleteAll()
+                    hotelDao.deleteAll()
                 }
             }
 
