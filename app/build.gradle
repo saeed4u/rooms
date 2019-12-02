@@ -98,6 +98,9 @@ dependencies {
     //util
     implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.3.0'
 
+
+    //image loader
+    implementation 'com.squareup.picasso:picasso:2.71828'
 }
 
 android.defaultConfig.vectorDrawables.useSupportLibrary = true

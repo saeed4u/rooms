@@ -1,6 +1,7 @@
 package com.ut.iot.rooms.di.modules.sub
 
 import com.ut.iot.rooms.ui.home.home.HomeFragment
+import com.ut.iot.rooms.ui.home.hotel.HotelFragment
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -13,5 +14,8 @@ abstract class HomeFragmentModule {
 
     @ContributesAndroidInjector
     abstract fun providesHomeFragment(): HomeFragment
+
+    @ContributesAndroidInjector
+    abstract fun providesHotelFragment(): HotelFragment
 
 }

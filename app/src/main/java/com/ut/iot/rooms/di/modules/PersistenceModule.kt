@@ -64,5 +64,11 @@ class PersistenceModule {
         return db.imageDao()
     }
 
+    @Provides
+    @Singleton
+    fun hotelDaoProvider(db: RoomsDB): HotelDao {
+        return db.hotelDao()
+    }
+
 
 }

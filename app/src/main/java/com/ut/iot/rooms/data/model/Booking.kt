@@ -24,7 +24,9 @@ data class Hotel(
     val country: Country,
     val zip_code: String,
     val phone: String,
-    val images: List<Image>
+    var price: Double,
+    val images: List<Image>,
+    val rooms: List<Room>
     )
 
 @Entity(tableName = "bookings")
@@ -87,8 +89,8 @@ data class Room(
     var created_at: String?,
     var updated_at: String?,
     var type_id: Int?,
-    @Ignore var type: RoomType?,
-    @Ignore var images: MutableList<RoomImage>?
+    var type: RoomType?,
+    var images: MutableList<RoomImage>?
 ) {
     constructor(
         id: Int,
