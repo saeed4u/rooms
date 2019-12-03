@@ -4,6 +4,7 @@ import com.ut.iot.rooms.di.modules.sub.AuthFragmentModule
 import com.ut.iot.rooms.di.modules.sub.HomeFragmentModule
 import com.ut.iot.rooms.ui.auth.AuthActivity
 import com.ut.iot.rooms.ui.home.HomeActivity
+import com.ut.iot.rooms.ui.home.hotel.detail.HotelDetailActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -19,5 +20,8 @@ abstract class ActivityBindingModule {
 
     @ContributesAndroidInjector(modules = [HomeFragmentModule::class])
     abstract fun providesHomeActivity(): HomeActivity
+
+    @ContributesAndroidInjector
+    abstract fun providesHotelDetailActivity(): HotelDetailActivity
 
 }

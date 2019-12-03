@@ -4,11 +4,17 @@
     <style name="AppTheme" parent="@style/Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/design_dark_default_color_primary_dark</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
         <item name="colorSecondary">@color/colorSecondary</item>
         <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
         <item name="colorError">@color/colorError</item>
 
     </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light" />
 
 </resources>

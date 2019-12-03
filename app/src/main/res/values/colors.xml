@@ -12,4 +12,5 @@
     <color name="black">#000000</color>
     <color name="darkBackground">#121212</color>
     <color name="lightTextColor">#DEFFFFFF</color>
+    <color name="grey_10">#e6e6e6</color>
 </resources>
