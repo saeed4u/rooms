@@ -31,7 +31,6 @@ import javax.inject.Inject
 abstract class BaseActivity : DaggerAppCompatActivity() {
 
     protected fun showLoader() {
-        Timber.d("Loader is $loader")
         loader?.visibility = View.VISIBLE
     }
 

@@ -1,5 +1,6 @@
 package com.ut.iot.rooms.ui.home.hotel
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import com.ut.iot.rooms.adapter.HotelAdapter
 import com.ut.iot.rooms.data.model.Hotel
 import com.ut.iot.rooms.data.model.Status
 import com.ut.iot.rooms.ui.BaseFragment
+import com.ut.iot.rooms.ui.home.hotel.detail.HotelDetailActivity
 import kotlinx.android.synthetic.main.list_fragment.*
 import timber.log.Timber
 import javax.inject.Inject
@@ -35,7 +37,9 @@ class HotelFragment : BaseFragment() {
 
         hotelAdapter = HotelAdapter(hotels, object : HotelItemClickListener{
             override fun onItemClicked(hotel: Hotel) {
-
+                val intent = Intent(baseActivity, HotelDetailActivity::class.java)
+                intent.putExtra("hotel", hotel.id)
+                startActivity(intent)
             }
         })
         items.adapter = hotelAdapter
