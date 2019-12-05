@@ -33,4 +33,5 @@
     <string name="view_deal">View deal</string>
     <string name="no_hotels">No hotels… just yet</string>
     <string name="per_night">per night</string>
+    <string name="book">Book</string>
 </resources>
