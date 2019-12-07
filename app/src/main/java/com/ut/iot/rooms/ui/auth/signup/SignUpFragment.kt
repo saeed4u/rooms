@@ -1,5 +1,6 @@
 package com.ut.iot.rooms.ui.auth.signup
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,9 +12,11 @@ import com.ut.iot.rooms.R
 import com.ut.iot.rooms.api.model.auth.AuthRequest
 import com.ut.iot.rooms.data.model.Status
 import com.ut.iot.rooms.ui.auth.AuthBaseFragment
+import com.ut.iot.rooms.ui.home.HomeActivity
 import com.ut.iot.rooms.util.afterTextChanged
 import kotlinx.android.synthetic.main.sign_up_fragment.*
 import kotlinx.android.synthetic.main.sign_up_fragment.view.*
+import net.yslibrary.android.keyboardvisibilityevent.util.UIUtil
 import timber.log.Timber
 import javax.inject.Inject
 
@@ -44,10 +47,10 @@ class SignUpFragment : AuthBaseFragment() {
         signUpViewModel.authResult.observe(viewLifecycleOwner, Observer {
             if (it.status == Status.SUCCESS) {
                 Timber.d("Called loginResult")
-                /*   val intent = Intent(authActivity, DashboardActivity::class.java)
-                   intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                   intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                   startActivity(intent)*/
+                val intent = Intent(authActivity, HomeActivity::class.java)
+                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                startActivity(intent)
             } else if (it.status == Status.ERROR) {
                 showAuthError()
             }
@@ -127,10 +130,12 @@ class SignUpFragment : AuthBaseFragment() {
     }
 
     private fun signUp(name: String, email: String, password: String) {
+
+        UIUtil.hideKeyboard(authActivity)
         val auth = AuthRequest(
             name,
             email,
-            password
+            password, false
         )
         signUpViewModel.makeAuthRequest(auth)
     }
