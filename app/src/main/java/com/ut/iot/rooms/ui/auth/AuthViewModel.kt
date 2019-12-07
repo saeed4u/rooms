@@ -27,7 +27,7 @@ open class AuthViewModel @Inject constructor(private val authRepo: AuthRepo) : V
     init {
         authResult = authRequest.switchMap {
             authRequest.value?.let {
-                authRepo.auth(it)
+                authRepo.auth(it, it.isLogin)
             } ?: NullLiveData.create()
         }
     }

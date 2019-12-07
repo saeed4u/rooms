@@ -1,7 +1,9 @@
 package com.ut.iot.rooms.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
+import android.view.MenuItem
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
@@ -10,6 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.ut.iot.rooms.R
 import com.ut.iot.rooms.data.model.ResourceLoading
 import com.ut.iot.rooms.ui.BaseActivity
+import com.ut.iot.rooms.ui.auth.AuthActivity
 import kotlinx.android.synthetic.main.activity_home.*
 
 
@@ -42,6 +45,15 @@ class HomeActivity : BaseActivity() {
     fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater = menuInflater
         inflater.inflate(R.menu.home_menu, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_logout -> {
+                toAuthActivity()
+            }
+        }
         return true
     }
 }
