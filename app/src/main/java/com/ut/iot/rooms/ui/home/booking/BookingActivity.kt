@@ -1,5 +1,6 @@
 package com.ut.iot.rooms.ui.home.booking
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.view.View
@@ -7,14 +8,17 @@ import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.ut.iot.rooms.R
 import com.ut.iot.rooms.adapter.RoomItemAdapter
+import com.ut.iot.rooms.data.model.AddBookingRequest
 import com.ut.iot.rooms.data.model.ResourceLoading
 import com.ut.iot.rooms.data.model.Room
 import com.ut.iot.rooms.data.model.Status
 import com.ut.iot.rooms.ui.BaseActivity
+import com.ut.iot.rooms.ui.home.HomeActivity
 import com.ut.iot.rooms.ui.home.hotel.detail.HotelDetailViewModel
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog
 import kotlinx.android.synthetic.main.activity_hotel_detail.toolbar
 import kotlinx.android.synthetic.main.booking_activity.*
+import timber.log.Timber
 import java.text.DecimalFormat
 import java.text.SimpleDateFormat
 import java.util.*
@@ -35,7 +39,6 @@ class BookingActivity : BaseActivity() {
 
     @Inject
     lateinit var bookingViewModel: BookingViewModel
-
 
     @Inject
     lateinit var hotelDetailViewModel: HotelDetailViewModel
@@ -71,15 +74,7 @@ class BookingActivity : BaseActivity() {
         })
         room_items.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         room_items.adapter = roomItemAdapter
-        hotelDetailViewModel.hotelResponse.observe(this, Observer {
-            if (it.status == Status.SUCCESS && it.data != null) {
-                with(it.data) {
-                    this@BookingActivity.rooms.clear()
-                    this@BookingActivity.rooms.addAll(rooms)
-                    roomItemAdapter.notifyDataSetChanged()
-                }
-            }
-        })
+        listenToHotelDetailResponse()
         hotelDetailViewModel.getHotel(intent.getIntExtra("hotel", 0))
         check_out_date.setOnClickListener {
             showCheckOutDatePicker()
@@ -89,6 +84,22 @@ class BookingActivity : BaseActivity() {
             showCheckInDatePicker()
         }
 
+        book_a_room.setOnClickListener {
+            bookingViewModel.addBooking(
+                AddBookingRequest(
+                    stateManager.getUserId(),
+                    startDate,
+                    endDate,
+                    selectedRoom!!.id
+                )
+            )
+        }
+
+        listenToBookingFormState()
+        listenToBookingResponse()
+    }
+
+    private fun listenToBookingFormState() {
         bookingViewModel.bookingFormStateLiveData_.observe(this, Observer {
             book_a_room.isEnabled = it.isValid
             if (it.startDate.isNotEmpty()) {
@@ -113,7 +124,33 @@ class BookingActivity : BaseActivity() {
                 book_a_room_layout.visibility = View.VISIBLE
             }
         })
+    }
 
+    private fun listenToHotelDetailResponse() {
+        hotelDetailViewModel.hotelResponse.observe(this, Observer {
+            if (it.status == Status.SUCCESS && it.data != null) {
+                with(it.data) {
+                    this@BookingActivity.rooms.clear()
+                    this@BookingActivity.rooms.addAll(rooms)
+                    roomItemAdapter.notifyDataSetChanged()
+                }
+            }
+        })
+    }
+
+    private fun listenToBookingResponse() {
+        bookingViewModel.addBookingResponse.observe(this, Observer {
+            Timber.d("Status ${it.status}")
+            when (it.status) {
+                Status.SUCCESS -> {
+                    val intent = Intent(this, HomeActivity::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK and Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    startActivity(intent)
+                }
+                Status.LOADING -> book_a_room.isEnabled = false
+                Status.ERROR -> book_a_room.isEnabled = true
+            }
+        })
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
