@@ -98,9 +98,14 @@ dependencies {
     //util
     implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.3.0'
 
+    //spinner
+    implementation 'com.github.ganfra:material-spinner:2.0.0'
 
     //image loader
     implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //time picker
+    implementation 'com.wdullaer:materialdatetimepicker:4.1.2'
 }
 
 android.defaultConfig.vectorDrawables.useSupportLibrary = true

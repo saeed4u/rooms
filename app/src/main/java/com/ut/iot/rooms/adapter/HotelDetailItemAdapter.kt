@@ -22,7 +22,7 @@ class HotelDetailItemAdapter(private val items: List<HotelDetail>) :
                     parent,
                     false
                 ))
-            HotelDetailType.PRICE.ordinal -> HotelDetailItemViewHolder(
+            HotelDetailType.ROOM.ordinal -> HotelDetailItemViewHolder(
                 LayoutInflater.from(parent.context).inflate(
                     R.layout.hotel_detail_price_item,
                     parent,

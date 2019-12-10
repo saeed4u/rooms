@@ -32,9 +32,6 @@ class HotelRepo @Inject constructor(private val hotelDao: HotelDao, private val 
             override fun saveToLocalStorage(data: HotelsResponse) {
                 scope.launch {
                     with(data.hotels){
-                        onEach {
-                            it.price = (100..200).random().toDouble()
-                        }
                         hotelDao.insertAll(*toTypedArray())
                     }
                 }
@@ -64,7 +61,6 @@ class HotelRepo @Inject constructor(private val hotelDao: HotelDao, private val 
             override fun saveToLocalStorage(data: HotelResponse) {
                 scope.launch(Dispatchers.IO){
                     with(data.hotel){
-                        price = (100..200).random().toDouble()
                         hotelDao.insertAll(this)
                     }
                 }

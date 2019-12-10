@@ -8,5 +8,4 @@
     android:layout_height="wrap_content"
     android:elevation="2dp"
     android:indeterminate="true"
-    android:visibility="gone"
     app:mpb_progressStyle="horizontal" />

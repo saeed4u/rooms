@@ -30,6 +30,8 @@
 
         <activity
             android:name=".ui.home.hotel.detail.HotelDetailActivity"/>
+        <activity
+            android:name=".ui.home.booking.BookingActivity"/>
 
         <service android:name=".fcm.PushNotificationService">
             <intent-filter>

@@ -6,7 +6,12 @@ package com.ut.iot.rooms.data.model
  */
 
 enum class HotelDetailType {
-    TITLE, RATING, ROOM,PRICE
+    TITLE, RATING, ROOM
 }
 
-data class HotelDetail(val value: String, val hotelDetailType: HotelDetailType)
+data class HotelDetail(
+    val value: String,
+    val hotelDetailType: HotelDetailType,
+    var otherValue: String = "",
+    var item: Any? = null
+)

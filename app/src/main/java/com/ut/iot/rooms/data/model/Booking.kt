@@ -24,7 +24,6 @@ data class Hotel(
     val country: Country,
     val zip_code: String,
     val phone: String,
-    var price: Double,
     val images: List<Image>,
     val rooms: List<Room>
     )
@@ -69,7 +68,7 @@ data class Booking(
 }
 
 @Entity(tableName = "room_types")
-data class RoomType(@PrimaryKey val id: Int, val name: String)
+data class RoomType(@PrimaryKey val id: Int, val name: String, var price: String = "")
 
 @Entity(tableName = "room_images")
 @ForeignKey(
@@ -90,7 +89,8 @@ data class Room(
     var updated_at: String?,
     var type_id: Int?,
     var type: RoomType?,
-    var images: MutableList<RoomImage>?
+    var images: MutableList<RoomImage>?,
+    @Ignore var selected: Boolean = false
 ) {
     constructor(
         id: Int,
@@ -98,5 +98,5 @@ data class Room(
         created_at: String,
         updated_at: String,
         type_id: Int?
-    ) : this(id, name, created_at, updated_at, type_id, null, null)
+    ) : this(id, name, created_at, updated_at, type_id, null, null, false)
 }

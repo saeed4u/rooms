@@ -3,12 +3,15 @@ package com.ut.iot.rooms.adapter.viewholder
 
 import android.annotation.SuppressLint
 import android.view.View
+import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import com.ut.iot.rooms.R
 import com.ut.iot.rooms.data.model.HotelDetail
 import com.ut.iot.rooms.data.model.HotelDetailType
+import com.ut.iot.rooms.data.model.Room
 import java.text.DecimalFormat
 
 /**
@@ -22,9 +25,20 @@ class HotelDetailItemViewHolder(private val view: View) : RecyclerView.ViewHolde
             HotelDetailType.RATING -> {
                 view.findViewById<RatingBar>(R.id.hotel_rating).rating = item.value.toFloat()
             }
-            HotelDetailType.TITLE, HotelDetailType.ROOM -> view.findViewById<TextView>(R.id.item).text = item.value
-            HotelDetailType.PRICE ->{
-                    view.findViewById<TextView>(R.id.pricing).text = "USD ${DecimalFormat("0.00").format(item.value.toDouble())} "
+            HotelDetailType.TITLE ->
+                view.findViewById<TextView>(R.id.item).text = item.value
+            HotelDetailType.ROOM -> {
+                view.findViewById<TextView>(R.id.item).text = item.value
+                view.findViewById<TextView>(R.id.pricing).text =
+                    "USD ${DecimalFormat("0.00").format(item.otherValue.toDouble())} "
+                val room = item.item as Room
+                val firstImage = room.images?.first()
+                firstImage?.apply {
+                    Picasso.get().load(src)
+                        .into(
+                            view.findViewById<ImageView>(R.id.room_image)
+                        )
+                }
             }
         }
     }
