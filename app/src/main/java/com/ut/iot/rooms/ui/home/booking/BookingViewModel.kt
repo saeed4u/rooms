@@ -1,7 +1,13 @@
 package com.ut.iot.rooms.ui.home.booking
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.switchMap
+import com.ut.iot.rooms.data.model.AddBookingRequest
+import com.ut.iot.rooms.data.model.Resource
+import com.ut.iot.rooms.repo.booking.BookingRepo
+import com.ut.iot.rooms.util.NullLiveData
 import java.text.SimpleDateFormat
 import java.util.*
 import javax.inject.Inject
@@ -10,12 +16,23 @@ import javax.inject.Inject
 /**
  * Created by Saeed on 08/12/2019.
  */
-class BookingViewModel @Inject constructor() : ViewModel() {
+class BookingViewModel @Inject constructor(private val bookingRepo: BookingRepo) : ViewModel() {
 
     private val dateFormat = SimpleDateFormat("EEE, MMM d, yyyy", Locale.getDefault())
 
     private val bookingFormStateLiveData = MutableLiveData<BookingFormState>()
     val bookingFormStateLiveData_ = bookingFormStateLiveData
+
+    private val addBookingRequest = MutableLiveData<AddBookingRequest>()
+    val addBookingResponse: LiveData<Resource<Boolean>>
+
+    init {
+        addBookingResponse = addBookingRequest.switchMap {
+            addBookingRequest.value?.let {
+                bookingRepo.addBooking(it)
+            } ?: NullLiveData.create()
+        }
+    }
 
 
     fun formStateChanged(startDate: String, endDate: String, roomId: Int? = 0) {
@@ -62,4 +79,6 @@ class BookingViewModel @Inject constructor() : ViewModel() {
         }
         bookingFormStateLiveData.value = bookingFormState
     }
+
+    fun addBooking(addBooking: AddBookingRequest) = addBookingRequest.postValue(addBooking)
 }

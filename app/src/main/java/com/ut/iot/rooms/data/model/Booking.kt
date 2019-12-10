@@ -14,6 +14,8 @@ data class Country(val name: String, val code: String)
 
 data class Image(val src: String)
 
+data class AddBookingRequest(val user_id: Int, val start_date: String, val end_date: String, val room_id: Int)
+
 @Entity(tableName = "hotels")
 data class Hotel(
     @PrimaryKey val id: Int, val name: String,
