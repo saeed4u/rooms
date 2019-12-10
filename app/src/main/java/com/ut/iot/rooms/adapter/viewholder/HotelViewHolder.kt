@@ -42,10 +42,6 @@ class HotelViewHolder(
 
             })
 
-        with(view.pricing) {
-            val price = "USD ${decimalFormat.format(hotel.price)} "
-            text = price
-        }
         view.view_deal.setOnClickListener {
             onHotelItemClickListener.onItemClicked(hotel)
         }

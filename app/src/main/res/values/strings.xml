@@ -34,4 +34,6 @@
     <string name="no_hotels">No hotels… just yet</string>
     <string name="per_night">per night</string>
     <string name="book">Book</string>
+    <string name="select_checkin_date">Select check in date</string>
+    <string name="book_for_days">Book %s for %s</string>
 </resources>

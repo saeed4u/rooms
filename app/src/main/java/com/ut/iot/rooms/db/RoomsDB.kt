@@ -12,7 +12,7 @@ import com.ut.iot.rooms.db.typeconverter.RoomsDBConverter
  * Created by Saeed on 27/11/2019.
  */
 @Database(
-    version = 3,
+    version = 4,
     entities = [User::class, Booking::class, Room::class, RoomType::class, RoomImage::class, Hotel::class]
 )
 @TypeConverters(value = [RoomsDBConverter::class])

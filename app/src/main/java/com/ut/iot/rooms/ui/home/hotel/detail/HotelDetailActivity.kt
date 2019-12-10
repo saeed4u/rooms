@@ -1,6 +1,8 @@
 package com.ut.iot.rooms.ui.home.hotel.detail
 
+import android.content.Intent
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Callback
@@ -9,6 +11,7 @@ import com.ut.iot.rooms.R
 import com.ut.iot.rooms.adapter.HotelDetailItemAdapter
 import com.ut.iot.rooms.data.model.*
 import com.ut.iot.rooms.ui.BaseActivity
+import com.ut.iot.rooms.ui.home.booking.BookingActivity
 import kotlinx.android.synthetic.main.activity_hotel_detail.*
 import timber.log.Timber
 import javax.inject.Inject
@@ -33,22 +36,23 @@ class HotelDetailActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hotel_detail)
         setSupportActionBar(toolbar)
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        supportActionBar?.setHomeButtonEnabled(true)
         supportActionBar?.title = null
         hotelDetailItemAdapter = HotelDetailItemAdapter((hotelItems))
         items.adapter = hotelDetailItemAdapter
+
         hotelDetailViewModel.hotelResponse.observe(this, Observer {
             Timber.d("It $it")
             if (it.status == Status.SUCCESS && it.data != null) {
                 with(it.data) {
                     init(this)
                 }
-                4
             }
         })
         hotelDetailViewModel.getHotel(intent.getIntExtra("hotel", 0))
         items.addOnScrollListener(object : RecyclerView.OnScrollListener() {
             override fun onScrollStateChanged(recyclerView: RecyclerView, newState: Int) {
-                Timber.d("new state $newState")
                 if (newState == RecyclerView.SCROLL_STATE_IDLE) {
                     book_a_room.extend()
                 }else{
@@ -63,6 +67,20 @@ class HotelDetailActivity : BaseActivity() {
                 }
             }
         })
+        book_a_room.setOnClickListener {
+            val bookingIntent = Intent(this, BookingActivity::class.java)
+            bookingIntent.putExtra("hotel",intent.getIntExtra("hotel", 0))
+            startActivity(bookingIntent)
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+            }
+        }
+        return true
     }
 
     private fun initImage(image: Image) {
@@ -86,11 +104,9 @@ class HotelDetailActivity : BaseActivity() {
 
             hotelItems.add(HotelDetail("Rating", HotelDetailType.TITLE))
             hotelItems.add(HotelDetail((4..5).random().toString(), HotelDetailType.RATING))
-            hotelItems.add(HotelDetail("Price", HotelDetailType.TITLE))
-            hotelItems.add(HotelDetail("${this.price}",HotelDetailType.PRICE))
             hotelItems.add(HotelDetail("Rooms", HotelDetailType.TITLE))
             rooms.forEach {
-                hotelItems.add(HotelDetail(it.name, HotelDetailType.ROOM))
+                hotelItems.add(HotelDetail(it.name, HotelDetailType.ROOM, it.type!!.price, it))
             }
             hotelDetailItemAdapter.notifyDataSetChanged()
             initImage(image)
