@@ -46,6 +46,7 @@ class SignInFragment : AuthBaseFragment() {
 
 
         signInViewModel.authResult.observe(viewLifecycleOwner, Observer {
+            Timber.d("It ${it.status}")
             if (it.status == Status.SUCCESS && !authSuccess) {
                 authSuccess = true
                 Timber.d("Called loginResult")
@@ -55,6 +56,11 @@ class SignInFragment : AuthBaseFragment() {
                 startActivity(intent)
             } else if (it.status == Status.ERROR) {
                 showAuthError()
+                view.sign_in_button.isEnabled = true
+                view.sign_up.isEnabled = true
+            } else {
+                view.sign_in_button.isEnabled = false
+                view.sign_up.isEnabled = false
             }
         })
 

@@ -106,6 +106,9 @@ dependencies {
 
     //time picker
     implementation 'com.wdullaer:materialdatetimepicker:4.1.2'
+
+    //palette
+    implementation group: 'androidx.palette', name: 'palette', version: '1.0.0'
 }
 
 android.defaultConfig.vectorDrawables.useSupportLibrary = true
