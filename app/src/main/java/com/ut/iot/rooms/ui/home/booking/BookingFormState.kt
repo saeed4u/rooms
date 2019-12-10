@@ -9,6 +9,7 @@ data class BookingFormState(
     var endDate: String = "",
     var startDateFormatted: String = "",
     var endDateFormatted: String = "",
-    var roomId: Int = 0,
+    var roomId: Int? = 0,
+    var numberOfDays: Long = 0,
     var isValid: Boolean = true
 )

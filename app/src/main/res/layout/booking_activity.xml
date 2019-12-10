@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/app_bar"
@@ -40,11 +41,13 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
+        android:animateLayoutChanges="true"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true">
 
 
             <androidx.recyclerview.widget.RecyclerView
@@ -60,13 +63,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
                 android:animateLayoutChanges="true"
                 android:orientation="vertical"
                 app:layout_constraintTop_toBottomOf="@id/room_items">
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/check_in_date"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:text="@string/select_checkin_date"
@@ -76,33 +80,65 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
 
+                <TextView
+                    android:id="@+id/to"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/to"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/check_out_date"
-                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="16dp"
-                    android:text="@string/select_checkin_date"
-                    android:visibility="gone"
+                    android:text="@string/select_checkout_date"
                     android:textAllCaps="false"
                     android:textSize="16sp"
+                    android:visibility="gone"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:visibility="visible" />
 
 
-
-                <com.google.android.material.button.MaterialButton
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    app:cornerRadius="16dp"
-                    android:enabled="false"
-                    android:layout_marginTop="16dp"
-                    android:textAllCaps="false"
-                    android:textSize="16sp"
-                    tools:text="Book room name for 3 days"
-                    style="@style/Widget.MaterialComponents.Button"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    android:id="@+id/book_a_room_layout"
+                    android:visibility="gone"
+                    tools:visibility="visible"
+                    android:layout_marginTop="16dp">
 
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/price"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:textSize="22sp"
+                        app:cornerRadius="16dp"
+                        android:layout_marginEnd="4dp"
+                        app:icon="@drawable/ic_euro_symbol_black_24dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/book_a_room"
+                        style="@style/Widget.MaterialComponents.Button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/price"
+                        android:enabled="false"
+                        android:textAllCaps="false"
+                        android:textSize="16sp"
+                        app:cornerRadius="16dp"
+                        tools:text="Book room name for 3 days" />
+
+
+                </RelativeLayout>
 
             </LinearLayout>
 

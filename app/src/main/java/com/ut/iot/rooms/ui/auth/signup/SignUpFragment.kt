@@ -14,8 +14,10 @@ import com.ut.iot.rooms.data.model.Status
 import com.ut.iot.rooms.ui.auth.AuthBaseFragment
 import com.ut.iot.rooms.ui.home.HomeActivity
 import com.ut.iot.rooms.util.afterTextChanged
+import kotlinx.android.synthetic.main.sign_in_fragment.view.*
 import kotlinx.android.synthetic.main.sign_up_fragment.*
 import kotlinx.android.synthetic.main.sign_up_fragment.view.*
+import kotlinx.android.synthetic.main.sign_up_fragment.view.password
 import net.yslibrary.android.keyboardvisibilityevent.util.UIUtil
 import timber.log.Timber
 import javax.inject.Inject
@@ -53,6 +55,9 @@ class SignUpFragment : AuthBaseFragment() {
                 startActivity(intent)
             } else if (it.status == Status.ERROR) {
                 showAuthError()
+            } else {
+                view.signup_button.isEnabled = false
+                view.sign_in.isEnabled = false
             }
         })
 

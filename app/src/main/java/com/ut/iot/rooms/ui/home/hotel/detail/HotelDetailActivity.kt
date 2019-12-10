@@ -1,9 +1,12 @@
 package com.ut.iot.rooms.ui.home.hotel.detail
 
 import android.content.Intent
+import android.content.res.ColorStateList
+import android.graphics.drawable.BitmapDrawable
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.lifecycle.Observer
+import androidx.palette.graphics.Palette
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Callback
 import com.squareup.picasso.Picasso
@@ -82,21 +85,6 @@ class HotelDetailActivity : BaseActivity() {
         }
         return true
     }
-
-    private fun initImage(image: Image) {
-        Picasso.get().load(image.src)
-            .error(R.drawable.hotel1)
-            .into(hotel_image, object : Callback {
-                override fun onSuccess() {
-
-                }
-
-                override fun onError(e: Exception?) {
-                }
-
-            })
-    }
-
     private fun init(hotel: Hotel) {
         with(hotel) {
             supportActionBar?.title = name
@@ -112,5 +100,25 @@ class HotelDetailActivity : BaseActivity() {
             initImage(image)
         }
     }
+
+    private fun initImage(image: Image) {
+        Picasso.get().load(image.src)
+            .error(R.drawable.hotel1)
+            .into(hotel_image, object : Callback {
+                override fun onSuccess() {
+                   val bitmap =  (hotel_image.drawable as BitmapDrawable).bitmap
+                    Palette.from(bitmap).generate {
+                        it?.apply {
+                            book_a_room.backgroundTintList = ColorStateList.valueOf(getDominantColor(resources.getColor(R.color.colorSecondary)))
+                        }
+                    }
+                }
+
+                override fun onError(e: Exception?) {
+                }
+
+            })
+    }
+
 
 }
