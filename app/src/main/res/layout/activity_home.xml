@@ -63,4 +63,10 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+    <include
+        layout="@layout/notification_banner"
+        app:layout_constraintBottom_toTopOf="parent" />
+
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

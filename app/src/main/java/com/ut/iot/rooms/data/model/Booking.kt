@@ -10,6 +10,8 @@ import androidx.room.PrimaryKey
  * Created by Saeed on 27/11/2019.
  */
 
+data class BookingItem(var booking: Booking? = null, var sectionTitle: String? = null)
+
 data class Country(val name: String, val code: String)
 
 data class Image(val src: String)

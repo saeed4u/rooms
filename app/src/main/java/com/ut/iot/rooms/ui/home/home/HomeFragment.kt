@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.Observer
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.ut.iot.rooms.R
 import com.ut.iot.rooms.adapter.BookingAdapter
 import com.ut.iot.rooms.data.model.Booking
@@ -29,14 +29,14 @@ class HomeFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.list_fragment, container, false)
+        return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         bookingAdapter = BookingAdapter(bookings)
         items.layoutManager =
-            LinearLayoutManager(baseActivity, LinearLayoutManager.HORIZONTAL, false)
+            GridLayoutManager(baseActivity, 2)
         items.adapter = bookingAdapter
         homeViewModel.bookingResponse.observe(viewLifecycleOwner, Observer {
             if (it.status == Status.SUCCESS) {

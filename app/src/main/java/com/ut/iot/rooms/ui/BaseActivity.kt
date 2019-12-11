@@ -1,12 +1,18 @@
 package com.ut.iot.rooms.ui
 
+import android.content.BroadcastReceiver
+import android.content.Context
 import android.content.Intent
+import android.content.IntentFilter
+import android.net.ConnectivityManager
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
+import androidx.localbroadcastmanager.content.LocalBroadcastManager
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.messaging.FirebaseMessaging
+import com.ut.iot.rooms.R
 import com.ut.iot.rooms.api.model.device.DeviceResponse
 import com.ut.iot.rooms.api.model.device.UpdateFCMToken
 import com.ut.iot.rooms.data.BannerMessage
@@ -16,12 +22,17 @@ import com.ut.iot.rooms.data.model.ResourceLoading
 import com.ut.iot.rooms.repo.device.DeviceRepo
 import com.ut.iot.rooms.state.StateManager
 import com.ut.iot.rooms.ui.auth.AuthActivity
+import com.ut.iot.rooms.util.BannerNotification
+import com.ut.iot.rooms.util.NETWORK_ACTION
+import com.ut.iot.rooms.util.NETWORK_AVAILABILITY
+import com.ut.iot.rooms.util.NetworkConnectivityReceiver
 import dagger.android.support.DaggerAppCompatActivity
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 import kotlinx.android.synthetic.main.horizontal_loader.*
 import timber.log.Timber
+import java.util.*
 import javax.inject.Inject
 
 
@@ -41,12 +52,18 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
     @Inject
     lateinit var stateManager: StateManager
 
+    private lateinit var broadcastManager: LocalBroadcastManager
+
+    private var banner: BannerNotification? = null
+    private var networkConnectivityReceiver: NetworkConnectivityReceiver? = null
+
     abstract fun handleResourceLoading(resourceLoading: ResourceLoading?)
 
     protected lateinit var disposables: CompositeDisposable
 
     @Inject
     lateinit var deviceRepo: DeviceRepo
+    private var isInternetAvailable = true
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,6 +75,29 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
             listenForNewFCMToken(),
             listenForApiMessage()
         )
+
+        broadcastManager = LocalBroadcastManager.getInstance(this)
+
+        broadcastManager.registerReceiver(object : BroadcastReceiver() {
+            override fun onReceive(context: Context, intent: Intent) {
+                val hasInternet = intent.getBooleanExtra(NETWORK_AVAILABILITY, true)
+                if (hasInternet && !isInternetAvailable) {
+
+                    isInternetAvailable = true
+                    banner?.dismiss()
+                } else if(!hasInternet) {
+                    Timber.d("Has Internet 1 $hasInternet")
+                    isInternetAvailable = false
+                    showError(getString(R.string.no_internet_text))
+                }
+            }
+        }, IntentFilter(NETWORK_ACTION))
+
+        val internetFilter = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
+
+        networkConnectivityReceiver = NetworkConnectivityReceiver()
+        registerReceiver(networkConnectivityReceiver, internetFilter)
+
     }
 
 
@@ -91,10 +131,10 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
                             toAuthActivity()
                             return@subscribe
                         }
-                        // showError(it.message)
+                        showError(it.message)
                     }
                     BannerType.SUCCESS -> {
-                        // showSuccess(it.message)
+                        showSuccess(it.message)
                     }
                 }
             }, {
@@ -155,8 +195,49 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
     }
 
     fun showError(message: String) {
-        //showBanner("error", content = message) { banner?.dismiss() }
+        showBanner("error", content = message) { banner?.dismiss() }
     }
+
+    fun showSuccess(message: String) {
+        Timber.d("Message $message")
+        showBanner("success", content = message) { banner?.dismiss() }
+    }
+
+
+    private fun showBanner(
+        type: String,
+        title: String = getString(R.string.app_name),
+        content: String,
+        rightAction: () -> Unit
+    ) {
+        banner = findViewById(R.id.banner)
+        banner?.apply {
+            when (type.toLowerCase(Locale.ROOT)) {
+                "success" -> setBackgroundResource(R.color.teal_400)
+                "error" -> setBackgroundResource(R.color.red_400)
+                else -> setBackgroundResource(R.color.colorPrimary)
+            }
+            bannerTitle = title
+            rightButtonText = R.string.ok
+            bannerContent = content
+            setRightButtonAction(rightAction)
+            show()
+        }
+    }
+
+
+    override fun onDestroy() {
+        try {
+            if (networkConnectivityReceiver != null) {
+                unregisterReceiver(networkConnectivityReceiver)
+            }
+        } catch (ex: Exception) {
+            ex.printStackTrace()
+        }
+        disposables.dispose()
+        super.onDestroy()
+    }
+
 
 
 }

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="BannerNotification">
+        <attr format="string|reference" name="contentText"/>
+        <attr format="string|reference" name="leftButtonText"/>
+        <attr format="string|reference" name="rightButtonText"/>
+        <attr format="reference" name="icon"/>
+
+        <attr format="color" name="contentTextColor"/>
+        <attr format="color" name="buttonsTextColor"/>
+        <attr format="color" name="bannerBackgroundColor"/>
+
+    </declare-styleable>
+
+</resources>

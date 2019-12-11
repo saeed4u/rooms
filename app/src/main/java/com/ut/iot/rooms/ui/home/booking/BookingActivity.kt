@@ -145,6 +145,7 @@ class BookingActivity : BaseActivity() {
                 Status.SUCCESS -> {
                     val intent = Intent(this, HomeActivity::class.java)
                     intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK and Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    intent.putExtra("message", R.string.booking_success)
                     startActivity(intent)
                 }
                 Status.LOADING -> book_a_room.isEnabled = false
