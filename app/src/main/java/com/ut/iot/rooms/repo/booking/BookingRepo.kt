@@ -44,6 +44,7 @@ class BookingRepo @Inject constructor(
 
             override fun saveToLocalStorage(data: BookingsResponse) {
                 scope.launch {
+                    bookingDao.deleteAll()
                     val bookings = data.bookings.onEach {
                         it.user_id = stateManager.getUserId()
                         it.room?.apply {

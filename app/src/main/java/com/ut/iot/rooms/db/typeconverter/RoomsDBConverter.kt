@@ -35,6 +35,16 @@ class RoomsDBConverter {
     }
 
     @TypeConverter
+    fun fromRoom(room: Room?): String {
+        return moshi.adapter(Room::class.java).toJson(room)
+    }
+
+    @TypeConverter
+    fun toRoom(room: String): Room? {
+        return moshi.adapter(Room::class.java).fromJson(room)
+    }
+
+    @TypeConverter
     fun fromRooms(rooms: List<Room>): String {
         val type = Types.newParameterizedType(List::class.java, Room::class.java)
         val adapter = moshi.adapter<List<Room>>(type)

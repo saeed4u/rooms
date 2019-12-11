@@ -43,33 +43,13 @@ data class Booking(
     val total_nights: Int,
     val total_price: String,
     val currency: String,
+    val hotel: String,
     val start_date: String,
     val end_date: String,
     var room_id: Int,
     var user_id: Int,
-    @Ignore var room: Room?
-) {
-    constructor(
-        id: Int,
-        total_nights: Int,
-        total_price: String,
-        currency: String,
-        start_date: String,
-        end_date: String,
-        room_id: Int,
-        user_id: Int
-    ) : this(
-        id,
-        total_nights,
-        total_price,
-        currency,
-        start_date,
-        end_date,
-        room_id,
-        user_id,
-        null
-    )
-}
+    var room: Room?
+)
 
 @Entity(tableName = "room_types")
 data class RoomType(@PrimaryKey val id: Int, val name: String, var price: String = "")

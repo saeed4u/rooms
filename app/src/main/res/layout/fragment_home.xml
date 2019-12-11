@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingStart="16dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.home.HomeFragment">
 
@@ -11,7 +12,6 @@
         android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
         android:id="@+id/my_bookings"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         app:layout_constraintLeft_toLeftOf="parent"
         style="@style/TextAppearance.MaterialComponents.Body1"

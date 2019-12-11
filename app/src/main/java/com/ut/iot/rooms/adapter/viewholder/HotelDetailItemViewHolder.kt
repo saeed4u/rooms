@@ -12,21 +12,26 @@ import com.ut.iot.rooms.R
 import com.ut.iot.rooms.data.model.HotelDetail
 import com.ut.iot.rooms.data.model.HotelDetailType
 import com.ut.iot.rooms.data.model.Room
+import timber.log.Timber
 import java.text.DecimalFormat
 
 /**
  * Created by Saeed on 02/12/2019.
  */
-class HotelDetailItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view){
+class HotelDetailItemViewHolder(private val view: View) : RecyclerView.ViewHolder(view) {
 
     @SuppressLint("SetTextI18n")
-    fun bind(item: HotelDetail){
-        when(item.hotelDetailType){
+    fun bind(item: HotelDetail) {
+        if (item.hotelDetailType == HotelDetailType.LOCATION){
+            view.findViewById<TextView>(R.id.item).text = item.value
+        }
+        when (item.hotelDetailType) {
             HotelDetailType.RATING -> {
                 view.findViewById<RatingBar>(R.id.hotel_rating).rating = item.value.toFloat()
             }
-            HotelDetailType.TITLE ->
+            HotelDetailType.TITLE -> {
                 view.findViewById<TextView>(R.id.item).text = item.value
+            }
             HotelDetailType.ROOM -> {
                 view.findViewById<TextView>(R.id.item).text = item.value
                 view.findViewById<TextView>(R.id.pricing).text =
@@ -40,6 +45,11 @@ class HotelDetailItemViewHolder(private val view: View) : RecyclerView.ViewHolde
                         )
                 }
             }
+            HotelDetailType.LOCATION -> {
+                Timber.d("Value ${item.value}")
+                view.findViewById<TextView>(R.id.item).text = item.value
+            }
+
         }
     }
 

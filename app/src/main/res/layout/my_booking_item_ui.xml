@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="180dp"
     android:layout_height="180dp"
-    android:layout_marginStart="8dp"
     android:layout_marginTop="16dp"
     android:layout_marginEnd="16dp"
     app:cardCornerRadius="4dp">
@@ -14,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="180dp"
         android:scaleType="fitXY"
-        android:src="@drawable/hotel_dummy" />
+        tools:src="@drawable/hotel_dummy" />
 
     <LinearLayout
         android:id="@+id/booking_details"
