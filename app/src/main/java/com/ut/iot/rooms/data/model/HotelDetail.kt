@@ -6,7 +6,7 @@ package com.ut.iot.rooms.data.model
  */
 
 enum class HotelDetailType {
-    TITLE, RATING, ROOM
+    TITLE, RATING, ROOM, LOCATION
 }
 
 data class HotelDetail(

@@ -42,6 +42,7 @@ class HomeFragment : BaseFragment() {
             if (it.status == Status.SUCCESS) {
                 Timber.d("Bookings ${it.data}")
                 it.data?.apply {
+                    bookings.clear()
                     bookings.addAll(this)
                     if (bookings.isEmpty()) {
                         no_items.visibility = View.VISIBLE

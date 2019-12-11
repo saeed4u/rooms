@@ -75,6 +75,11 @@ class HotelDetailActivity : BaseActivity() {
             bookingIntent.putExtra("hotel",intent.getIntExtra("hotel", 0))
             startActivity(bookingIntent)
         }
+        book_a_room.scaleX =0F
+        book_a_room.scaleY =0F
+        book_a_room.animate().scaleX(1.0F).scaleY(1.0F)
+            .setDuration(500)
+            .start()
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
@@ -92,6 +97,10 @@ class HotelDetailActivity : BaseActivity() {
 
             hotelItems.add(HotelDetail("Rating", HotelDetailType.TITLE))
             hotelItems.add(HotelDetail((4..5).random().toString(), HotelDetailType.RATING))
+
+            hotelItems.add(HotelDetail("Address", HotelDetailType.TITLE))
+            hotelItems.add(HotelDetail("$address, $city, $state, ${country.name}", HotelDetailType.LOCATION))
+
             hotelItems.add(HotelDetail("Rooms", HotelDetailType.TITLE))
             rooms.forEach {
                 hotelItems.add(HotelDetail(it.name, HotelDetailType.ROOM, it.type!!.price, it))
