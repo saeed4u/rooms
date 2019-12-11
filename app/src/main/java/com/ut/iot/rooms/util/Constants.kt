@@ -11,4 +11,7 @@ const val AUTHORIZATION_HEADER = "Authorization"
 const val DEVICE_ID_HEADER = "device-id"
 
 
+val NETWORK_ACTION = NetworkConnectivityReceiver::class.java.name
+const val NETWORK_AVAILABILITY = "is_network_available"
+
 val PUSH_NOTIFICATION = "app.rooms.pushNotification"

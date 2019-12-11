@@ -1,6 +1,5 @@
 package com.ut.iot.rooms.ui.home
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -12,8 +11,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.ut.iot.rooms.R
 import com.ut.iot.rooms.data.model.ResourceLoading
 import com.ut.iot.rooms.ui.BaseActivity
-import com.ut.iot.rooms.ui.auth.AuthActivity
 import kotlinx.android.synthetic.main.activity_home.*
+import timber.log.Timber
 
 
 class HomeActivity : BaseActivity() {
@@ -39,6 +38,11 @@ class HomeActivity : BaseActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+        if(intent.hasExtra("message")) {
+            Timber.d("Message ${intent.getIntExtra("message", 0)}")
+            showSuccess(getString(intent.getIntExtra("message", 0)))
+            intent.removeExtra("message");
+        }
     }
 
     override

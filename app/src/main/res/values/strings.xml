@@ -38,4 +38,11 @@
     <string name="select_checkout_date">Select check out date</string>
     <string name="book_for_days">Book \"%s\" for %s</string>
     <string name="to">TO</string>
+
+    <string name="banner_default_content"> </string>
+    <string name="dismiss">dismiss</string>
+    <string name="ok">OK</string>
+    <string name="booking_success">Your booking has been successfully made</string>
+    <string name="my_bookings">My Bookings</string>
+    <string name="no_internet_text">We cannot connect to the Rooms network, please check your Internet connection.</string>
 </resources>

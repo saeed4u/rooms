@@ -15,7 +15,7 @@ interface BookingDao: BaseDao<Booking> {
     @Query("SELECT * FROM bookings WHERE id= :bookingId")
     fun getBooking(bookingId: Int): LiveData<Booking>
 
-    @Query("SELECT * FROM bookings WHERE user_id= :userId")
+    @Query("SELECT * FROM bookings WHERE user_id= :userId ORDER BY id DESC")
     fun getUserBookings(userId: Int): LiveData<List<Booking>>
 
     @Query("DELETE FROM bookings")

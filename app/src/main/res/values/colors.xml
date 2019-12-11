@@ -13,4 +13,6 @@
     <color name="darkBackground">#121212</color>
     <color name="lightTextColor">#DEFFFFFF</color>
     <color name="grey_10">#e6e6e6</color>
+    <color name="teal_400">#009688</color>
+    <color name="red_400">#ef5350</color>
 </resources>
