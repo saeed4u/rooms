@@ -95,6 +95,7 @@ class BannerNotification : CoordinatorLayout {
 
     fun dismiss() {
         if (isVisible) {
+            Timber.d("Banner hide()")
             this.collapse()
             this.visibility = View.GONE
         }

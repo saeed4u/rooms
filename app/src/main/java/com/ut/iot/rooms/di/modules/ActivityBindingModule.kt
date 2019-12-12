@@ -6,6 +6,7 @@ import com.ut.iot.rooms.ui.auth.AuthActivity
 import com.ut.iot.rooms.ui.home.HomeActivity
 import com.ut.iot.rooms.ui.home.booking.BookingActivity
 import com.ut.iot.rooms.ui.home.hotel.detail.HotelDetailActivity
+import com.ut.iot.rooms.ui.settings.SettingsActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -27,5 +28,8 @@ abstract class ActivityBindingModule {
 
     @ContributesAndroidInjector
     abstract fun providesBookingActivity(): BookingActivity
+
+    @ContributesAndroidInjector
+    abstract fun providesSettingsActivity(): SettingsActivity
 
 }

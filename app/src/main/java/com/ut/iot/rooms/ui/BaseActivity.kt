@@ -22,10 +22,7 @@ import com.ut.iot.rooms.data.model.ResourceLoading
 import com.ut.iot.rooms.repo.device.DeviceRepo
 import com.ut.iot.rooms.state.StateManager
 import com.ut.iot.rooms.ui.auth.AuthActivity
-import com.ut.iot.rooms.util.BannerNotification
-import com.ut.iot.rooms.util.NETWORK_ACTION
-import com.ut.iot.rooms.util.NETWORK_AVAILABILITY
-import com.ut.iot.rooms.util.NetworkConnectivityReceiver
+import com.ut.iot.rooms.util.*
 import dagger.android.support.DaggerAppCompatActivity
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
@@ -92,6 +89,20 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
                 }
             }
         }, IntentFilter(NETWORK_ACTION))
+
+        broadcastManager.registerReceiver(object : BroadcastReceiver() {
+            override fun onReceive(context: Context?, intent: Intent) {
+                Timber.d("New push ${intent.extras}")
+                showBanner(
+                    "success", intent.getStringExtra("title") ?: getString(R.string.app_name),
+                    intent.getStringExtra("message") ?: ""
+                ) {
+
+                }
+                banner?.show()
+            }
+        }, IntentFilter(PUSH_NOTIFICATION))
+
 
         val internetFilter = IntentFilter(ConnectivityManager.CONNECTIVITY_ACTION)
 
@@ -160,7 +171,7 @@ abstract class BaseActivity : DaggerAppCompatActivity() {
                 handleResourceLoading(it)
                 when (it) {
                     ResourceLoading.LOADING -> {
-                        Timber.d("Loading!!")
+                        banner?.dismiss()
                         showLoader()
                     }
                     ResourceLoading.DONE -> {

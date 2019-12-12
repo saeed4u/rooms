@@ -1,5 +1,6 @@
 package com.ut.iot.rooms.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -11,6 +12,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.ut.iot.rooms.R
 import com.ut.iot.rooms.data.model.ResourceLoading
 import com.ut.iot.rooms.ui.BaseActivity
+import com.ut.iot.rooms.ui.settings.SettingsActivity
 import kotlinx.android.synthetic.main.activity_home.*
 import timber.log.Timber
 
@@ -56,6 +58,10 @@ class HomeActivity : BaseActivity() {
         when (item.itemId) {
             R.id.action_logout -> {
                 toAuthActivity()
+            }
+            R.id.action_settings -> {
+                val settingsIntent = Intent(this, SettingsActivity::class.java)
+                startActivity(settingsIntent)
             }
         }
         return true

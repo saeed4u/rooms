@@ -14,10 +14,8 @@ import com.ut.iot.rooms.data.model.Status
 import com.ut.iot.rooms.ui.auth.AuthBaseFragment
 import com.ut.iot.rooms.ui.home.HomeActivity
 import com.ut.iot.rooms.util.afterTextChanged
-import kotlinx.android.synthetic.main.sign_in_fragment.view.*
 import kotlinx.android.synthetic.main.sign_up_fragment.*
 import kotlinx.android.synthetic.main.sign_up_fragment.view.*
-import kotlinx.android.synthetic.main.sign_up_fragment.view.password
 import net.yslibrary.android.keyboardvisibilityevent.util.UIUtil
 import timber.log.Timber
 import javax.inject.Inject
@@ -47,17 +45,21 @@ class SignUpFragment : AuthBaseFragment() {
 
 
         signUpViewModel.authResult.observe(viewLifecycleOwner, Observer {
-            if (it.status == Status.SUCCESS) {
-                Timber.d("Called loginResult")
-                val intent = Intent(authActivity, HomeActivity::class.java)
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
-                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
-                startActivity(intent)
-            } else if (it.status == Status.ERROR) {
-                showAuthError()
-            } else {
-                view.signup_button.isEnabled = false
-                view.sign_in.isEnabled = false
+            when {
+                it.status == Status.SUCCESS -> {
+                    Timber.d("Called loginResult")
+                    val intent = Intent(authActivity, HomeActivity::class.java)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    startActivity(intent)
+                }
+                it.status == Status.ERROR -> {
+                    showAuthError()
+                    handleViewState(true)
+                }
+                else -> {
+                    handleViewState(false)
+                }
             }
         })
 
@@ -132,6 +134,14 @@ class SignUpFragment : AuthBaseFragment() {
             )
         }
 
+    }
+
+    private fun handleViewState(isEnabled: Boolean) {
+        view!!.name.isEnabled = isEnabled
+        view!!.email.isEnabled = isEnabled
+        view!!.password.isEnabled = isEnabled
+        view!!.signup_button.isEnabled = isEnabled
+        view!!.sign_in.isEnabled = isEnabled
     }
 
     private fun signUp(name: String, email: String, password: String) {
