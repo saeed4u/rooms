@@ -33,6 +33,10 @@
         <activity
             android:name=".ui.home.booking.BookingActivity"/>
 
+        <activity
+            android:name=".ui.settings.SettingsActivity"/>
+
+
         <service android:name=".fcm.PushNotificationService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

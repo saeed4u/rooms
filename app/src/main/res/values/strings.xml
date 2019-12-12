@@ -45,4 +45,8 @@
     <string name="booking_success">Your booking has been successfully made</string>
     <string name="my_bookings">My Bookings</string>
     <string name="no_internet_text">We cannot connect to the Rooms network, please check your Internet connection.</string>
+    <string name="select_a_room">Select a room</string>
+    <string name="cache">Cache</string>
+    <string name="clear_cache">Clear cache</string>
+    <string name="night_mode">Night mode</string>
 </resources>

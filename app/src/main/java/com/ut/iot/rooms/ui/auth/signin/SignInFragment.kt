@@ -58,7 +58,11 @@ class SignInFragment : AuthBaseFragment() {
                 showAuthError()
                 view.sign_in_button.isEnabled = true
                 view.sign_up.isEnabled = true
+                view.email_address.isEnabled = true
+                view.password.isEnabled = true
             } else {
+                view.email_address.isEnabled = false
+                view.password.isEnabled = false
                 view.sign_in_button.isEnabled = false
                 view.sign_up.isEnabled = false
             }
@@ -81,7 +85,6 @@ class SignInFragment : AuthBaseFragment() {
             } else {
                 view.password_holder.error = null
             }
-
 
         })
 
